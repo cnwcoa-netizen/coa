@@ -12,11 +12,12 @@ This project is configured to automatically build an Android APK using **GitHub 
 
 If you want to build it locally:
 
-1.  `npm install`
-2.  `npm run build`
-3.  `npx cap add android` (first time only)
-4.  `npx cap sync android`
-5.  `npx cap open android` (opens Android Studio to generate the APK)
+1.  **Install Node.js 22+** and **Java 21 (JDK)**.
+2.  `npm install`
+3.  `npm run build`
+4.  `npx cap add android` (first time only)
+5.  `npx cap sync android`
+6.  `npx cap open android` (opens Android Studio to generate the APK)
 
 ---
 *Developed for Kakinada Coaching Depot, Indian Railways.*
