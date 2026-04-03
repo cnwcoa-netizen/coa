@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Coach Inventory - Android Build Instructions
 
-# Run and deploy your AI Studio app
+This project is configured to automatically build an Android APK using **GitHub Actions**.
 
-This contains everything you need to run your app locally.
+## How to get your APK:
 
-View your app in AI Studio: https://ai.studio/apps/6d65c8e5-3d68-490f-bfe5-506e18350123
+1.  **Export to GitHub**: Use the "Export to GitHub" option in the AI Studio settings.
+2.  **Wait for Build**: Once the code is on GitHub, go to the **"Actions"** tab in your repository.
+3.  **Download**: Look for the latest run named **"Build Android APK"**. Once it finishes (takes about 5-8 minutes), scroll down to the **"Artifacts"** section and download the `coach-inventory-apk`.
 
-## Run Locally
+## Manual Build (on your computer):
 
-**Prerequisites:**  Node.js
+If you want to build it locally:
 
+1.  `npm install`
+2.  `npm run build`
+3.  `npx cap add android` (first time only)
+4.  `npx cap sync android`
+5.  `npx cap open android` (opens Android Studio to generate the APK)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+*Developed for Kakinada Coaching Depot, Indian Railways.*
